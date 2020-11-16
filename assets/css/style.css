@@ -6,4 +6,38 @@
 
 body{
   font-family: "Raleway", sans-serif;
+  background-color: #b81b51;
+}
+
+/* Utility Classes */
+.text-center{
+  text-align: center;
+  margin: auto;
+}
+
+.container{
+  width: 950px;
+  margin: auto;
+  text-align: center;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.white{
+  color: white;
+}
+
+.bg-white{
+  background-color: white;
+}
+
+.bg-grey{
+  background-color: grey;
+}
+
+/* Sezione calcolo biglietto */
+#calcolo-biglietto .d-flex{
+  justify-content: space-around;
 }
