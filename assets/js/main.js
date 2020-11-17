@@ -17,6 +17,26 @@ actionGenera.addEventListener('click', function () {
     var inputFullNameValue = inputFullName.value;
     var inputAgeValue = inputAge.value;
 
+    // Decrivo tutto ciò che avviene quando la pagina deve mostrare il prezzo
+    var distancePrice = inputKilometersValue * 0.21 ;
+
+    if (inputAgeValue == "minorenne") {
+
+      document.getElementById('sconto').innerHTML = "Sconto Minorenne" ;
+      document.getElementById('ticket-price').innerHTML = distancePrice - (distancePrice * 20) /100 + " $";
+
+    } else if (inputAgeValue == "over65") {
+
+      document.getElementById('sconto').innerHTML = "Sconto Over-65" ;
+      document.getElementById('ticket-price').innerHTML = distancePrice - (distancePrice * 40) /100 + " $";
+
+    } else {
+
+      document.getElementById('sconto').innerHTML = "Nessuno sconto" ;
+      document.getElementById('ticket-price').innerHTML = distancePrice + " $";
+
+    }
+
     // Scrivo il nome nel biglietto
     document.getElementById('nome-passeggero').innerHTML = inputFullNameValue ;
 
@@ -27,5 +47,8 @@ actionGenera.addEventListener('click', function () {
     document.getElementById('codice-cp').innerHTML = Math.floor(Math.random() * 9999) +90000;
 
 
+
   }
 );
+
+// Click su annulla
