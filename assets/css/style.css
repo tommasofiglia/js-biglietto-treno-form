@@ -53,6 +53,10 @@ body{
   display: block;
 }
 
+.p-10{
+  padding: 10px;
+}
+
 .py-30{
   padding-top: 30px;
   padding-bottom: 30px;
@@ -65,6 +69,11 @@ body{
 .fw-600{
   font-weight: 600;
 }
+
+.fuchsia{
+  color: #b81b51;
+}
+
 
 h3{
   text-align: left;
@@ -80,10 +89,24 @@ h2{
   justify-content: space-around;
 }
 
+#calcolo-biglietto button{
+  border-radius: 3px;
+}
+
+#calcolo-biglietto button:focus{
+  border: 2px solid #b81b51;
+}
+
 
 /* Sezione biglietto */
 #biglietto{
   display: none;
+}
+
+#biglietto h3{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 40px;
 }
 
 table{
