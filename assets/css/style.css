@@ -16,7 +16,7 @@ body{
 }
 
 .container{
-  width: 950px;
+  width: 750px;
   margin: auto;
   text-align: center;
 }
@@ -37,7 +37,18 @@ body{
   background-color: grey;
 }
 
+h3{
+  text-align: left;
+}
+
 /* Sezione calcolo biglietto */
 #calcolo-biglietto .d-flex{
   justify-content: space-around;
+}
+
+table{
+  width: 650px;
+  margin: auto;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
