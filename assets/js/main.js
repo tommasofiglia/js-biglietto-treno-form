@@ -23,6 +23,9 @@ actionGenera.addEventListener('click', function () {
     //Scrivo la carrozza nel biglietto (numero compreso tra 1 e 9)
     document.getElementById('carrozza').innerHTML = Math.floor(Math.random() * 9) +1;
 
+    //Scrivo il codice CP nel Biglietto (nmumero compreso tra 90000 e 99999)
+    document.getElementById('codice-cp').innerHTML = Math.floor(Math.random() * 9999) +90000;
+
 
   }
 );
