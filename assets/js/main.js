@@ -46,9 +46,17 @@ actionGenera.addEventListener('click', function () {
     //Scrivo il codice CP nel Biglietto (nmumero compreso tra 90000 e 99999)
     document.getElementById('codice-cp').innerHTML = Math.floor(Math.random() * 9999) +90000;
 
-
-
   }
 );
 
 // Click su annulla
+actionAnnulla.addEventListener('click', function () {
+
+  document.getElementById('sconto').innerHTML = "" ;
+  document.getElementById('ticket-price').innerHTML = "";
+  document.getElementById('nome-passeggero').innerHTML = "";
+  document.getElementById('carrozza').innerHTML = "";
+  document.getElementById('codice-cp').innerHTML = "";
+
+}
+);
