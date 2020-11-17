@@ -12,22 +12,22 @@
     <section id="calcolo-biglietto">
 
       <h2 class="white text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
-      <div class="card-rounded container bg-white">
+      <div class="card-rounded container bg-white height-200">
 
         <div class="row d-flex">
 
           <div class="col">
-             <label for="name">Nome e Cognome</label>
+             <label for="name" class="d-block py-30">Nome e Cognome</label>
              <input type="text" name="name" id="full-name">
           </div>
 
           <div class="col">
-            <label for="name">Km da percorrere</label>
+            <label for="name" class="d-block py-30">Km da percorrere</label>
             <input type="number" class="km" id="kilometers">
           </div>
 
           <div class="col">
-            <label for="fascia">Fascia di età</label>
+            <label for="fascia" class="d-block py-30">Fascia di età</label>
             <select name="fascia" id="age-range">
               <option value="minorenne">Minorenne</option>
               <option value="maggiorenne">Maggiorenne</option>
@@ -37,7 +37,7 @@
 
         </div>
 
-        <div class="row">
+        <div class="row pt-50">
           <button id="btn-genera">Genera</button>
           <button id="btn-annulla">Annulla</button>
         </div>
@@ -50,7 +50,7 @@
 
       <h2 class="text-center white">IL TUO BIGLIETTO</h2>
 
-      <div class="container bg-white">
+      <div class="container bg-white height-200">
         <h3>DETTAGLIO PASSEGGERI</h3>
 
         <table>

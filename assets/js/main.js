@@ -3,10 +3,14 @@
 var actionGenera = document.getElementById('btn-genera');
 var actionAnnulla = document.getElementById('btn-annulla');
 
+// Definisco la variabile relativa alla parte "biglietto"
+var ticketSection = document.getElementById('biglietto');
 // Click su genera
 
 actionGenera.addEventListener('click', function () {
 
+    // Mostriamo la sezione biglietto
+    ticketSection.style.display = "block";
     // Descrivo le variabili relative a Nome, km e range di età inseriti
     var inputKilometers = document.getElementById('kilometers');
     var inputFullName = document.getElementById('full-name');
@@ -23,17 +27,17 @@ actionGenera.addEventListener('click', function () {
     if (inputAgeValue == "minorenne") {
 
       document.getElementById('sconto').innerHTML = "Sconto Minorenne" ;
-      document.getElementById('ticket-price').innerHTML = distancePrice - (distancePrice * 20) /100 + " $";
+      document.getElementById('ticket-price').innerHTML = (distancePrice - (distancePrice * 20) /100).toFixed(2) + " $";
 
     } else if (inputAgeValue == "over65") {
 
       document.getElementById('sconto').innerHTML = "Sconto Over-65" ;
-      document.getElementById('ticket-price').innerHTML = distancePrice - (distancePrice * 40) /100 + " $";
+      document.getElementById('ticket-price').innerHTML = (distancePrice - (distancePrice * 40) /100).toFixed(2) + " $";
 
     } else {
 
       document.getElementById('sconto').innerHTML = "Nessuno sconto" ;
-      document.getElementById('ticket-price').innerHTML = distancePrice + " $";
+      document.getElementById('ticket-price').innerHTML = distancePrice.toFixed(2) + " $";
 
     }
 
@@ -52,6 +56,7 @@ actionGenera.addEventListener('click', function () {
 // Click su annulla
 actionAnnulla.addEventListener('click', function () {
 
+  ticketSection.style.display = "none";
   document.getElementById('sconto').innerHTML = "" ;
   document.getElementById('ticket-price').innerHTML = "";
   document.getElementById('nome-passeggero').innerHTML = "";

@@ -37,13 +37,45 @@ body{
   background-color: grey;
 }
 
+.height-200{
+  height: 200px;
+}
+
+.card-rounded{
+  border-radius: 5px;
+}
+
+.d-block{
+  display: block;
+}
+
+.py-30{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.pt-50{
+  padding-top: 50px;
+}
+
 h3{
   text-align: left;
+}
+
+h2{
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* Sezione calcolo biglietto */
 #calcolo-biglietto .d-flex{
   justify-content: space-around;
+}
+
+
+/* Sezione biglietto */
+#biglietto{
+  display: none;
 }
 
 table{
