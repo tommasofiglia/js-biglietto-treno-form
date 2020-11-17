@@ -41,6 +41,10 @@ body{
   height: 200px;
 }
 
+.height-70{
+  height: 70px;
+}
+
 .card-rounded{
   border-radius: 5px;
 }
@@ -56,6 +60,10 @@ body{
 
 .pt-50{
   padding-top: 50px;
+}
+
+.fw-600{
+  font-weight: 600;
 }
 
 h3{
