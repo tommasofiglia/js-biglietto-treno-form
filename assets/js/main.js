@@ -20,6 +20,9 @@ actionGenera.addEventListener('click', function () {
     // Scrivo il nome nel biglietto
     document.getElementById('nome-passeggero').innerHTML = inputFullNameValue ;
 
+    //Scrivo la carrozza nel biglietto (numero compreso tra 1 e 9)
+    document.getElementById('carrozza').innerHTML = Math.floor(Math.random() * 9) +1;
+
 
   }
 );
